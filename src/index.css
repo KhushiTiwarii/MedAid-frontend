@@ -26,6 +26,9 @@
   .header{
     @apply bg-gradient-to-r from-white to-cyan-100 bg-no-repeat bg-center bg-cover w-full  ;
   }
+  .hero_section{
+    @apply bg-gradient-to-r from-white to-cyan-100 bg-no-repeat bg-center bg-cover w-full;
+  }
 }
 
 @media only screen and (max-width:1024px) {

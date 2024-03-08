@@ -74,7 +74,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="" />
             <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'>Copyright © {year} </p>
-            <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'>Made with &lt;3 by Khushi Tiwari:&#41;</p>
+            <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'>Made with &lt;3 by Khushii:&#41;</p>
             <div className='flex items-center gap-3 mt-4'>
               {socialLinks.map((link,index)=> <Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center group hover:bg-primaryColor hover:border-none'>{link.icon}</Link>)}
             </div>

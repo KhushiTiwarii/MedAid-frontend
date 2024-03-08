@@ -40,7 +40,7 @@ const socialLinks = [
     },
     {
       path:"/",
-      display:"Reguest an Appointment"
+      display:"Request an Appointment"
     },
     {
       path:"/",
@@ -85,7 +85,7 @@ const Footer = () => {
             <ul>
               {quickLinks01.map((item,index)=>(
                 <li key={index} className='mb-4'>
-                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-textColor'>{item.display}</Link>
+                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-textColor hover:text-primaryColor'>{item.display}</Link>
                 </li>
               ))}
             </ul>
@@ -96,7 +96,7 @@ const Footer = () => {
             <ul>
               {quickLinks02.map((item,index)=>(
                 <li key={index} className='mb-4'>
-                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-textColor'>{item.display}</Link>
+                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-textColor hover:text-primaryColor'>{item.display}</Link>
                 </li>
               ))}
             </ul>
@@ -107,7 +107,7 @@ const Footer = () => {
             <ul>
               {quickLinks03.map((item,index)=>(
                 <li key={index} className='mb-4'>
-                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-textColor'>{item.display}</Link>
+                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-textColor hover:text-primaryColor'>{item.display}</Link>
                 </li>
               ))}
             </ul>

@@ -3,6 +3,7 @@ import doctorImg from '../../images/doctor-img02.jpg'
 import starIcon from '../../images/Star.png'
 import DoctorAbout from './DoctorAbout'
 import Feedback from './Feedback'
+import SidePanel from './SidePanel'
 
 const DoctorDetails = () => {
   
@@ -44,6 +45,10 @@ const DoctorDetails = () => {
                 tab==='feedback' && <Feedback/>
               }
             </div>
+          </div>
+
+          <div>
+            <SidePanel/>
           </div>
       </div>
     </div>

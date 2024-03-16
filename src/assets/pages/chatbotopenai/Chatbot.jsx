@@ -5,10 +5,9 @@ import { useState } from 'react'
 import './Chatbot.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
-import dotenv from 'dotenv'
-dotenv.config()
+const API_KEY = import.meta.env.API_KEY
 
-const API_KEY = ''; ///EXPIRY - JUNE 2024
+
 // "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
   "role": "system", "content": "Explain things like you're talking to a software professional with 2 years of experience."
@@ -95,7 +94,7 @@ function Chatbot() {
           <ChatContainer>       
             <MessageList 
               scrollBehavior="smooth" 
-              typingIndicator={isTyping ? <TypingIndicator content="ChatGPT is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="MedAid bot is typing" /> : null}
             >
               {messages.map((message, i) => {
                 console.log(message)

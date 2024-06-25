@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { authContext } from '../../context/AuthContext.jsx'
 import { BASE_URL } from '../../config.js'
-import  HashLoader from 'react-spinners'
+import  {HashLoader} from 'react-spinners'
 
 const Login = () => {
 

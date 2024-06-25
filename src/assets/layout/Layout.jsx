@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../components/Header/Header'
 import Routers from '../../routes/Routers'
 import Footer from '../../components/Footer/Footer'
+import Bot from '../pages/chatbotopenai/Bot'
 
 
 const Layout = () => {
@@ -11,6 +12,7 @@ const Layout = () => {
    <main>
     <Routers/>
    </main>
+   <Bot/>
    <Footer/>
    </>
   )

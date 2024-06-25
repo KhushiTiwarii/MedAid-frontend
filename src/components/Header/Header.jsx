@@ -4,8 +4,6 @@ import { NavLink,Link } from 'react-router-dom'
 import userImg from '../../assets/images/avatar-icon.png'
 import {BiMenu} from 'react-icons/bi'
 import navBg from '../../assets/images/ice.jpg'
-import chatIcon from '../../assets/images/aichat.png'
-import Chatbot from '../../assets/pages/chatbotopenai/Chatbot'
 
 const navLinks = [
   {
@@ -30,11 +28,6 @@ const Header = () => {
 
   const headerRef = useRef(null)
   const menuRef = useRef(null)
-
-  const [chatbotOpen,setChatbotOpen] = useState(false)
-  const handleChatClick = () =>{
-    setChatbotOpen(!chatbotOpen)
-  }
 
   const handleStickyHeader = () => {
     window.addEventListener('scroll',()=>{
@@ -85,10 +78,6 @@ const Header = () => {
               </ul>
             </div>
 
-            <div className='w-10 h-10 rounded-full  bg-white cursor-pointer m-2' onClick={handleChatClick}>
-              <img src={chatIcon} alt=""  className='w-full h-full rounded-full'/>
-            </div>
-
             
 
             {/* nav right */}
@@ -114,7 +103,6 @@ const Header = () => {
           </div>
        </div>
     </header>
-    {chatbotOpen ? <Chatbot/> : ""}
     </>
   )
 }
